@@ -1,0 +1,16 @@
+header, footer{
+	background: grey;
+	background : -webkit-linear-gradient(grey 0%, #0099BB 100%);
+	background : -moz-linear-gradient(grey 0%, #0099BB 100%);
+	background : -o-linear-gradient(grey 0%, #0099BB 100%);
+	background : linear-gradient(grey 0%, #0099BB 100%);
+}
+
+
+header, footer{
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius:15px;
+	border-radius: 15px;
+}
