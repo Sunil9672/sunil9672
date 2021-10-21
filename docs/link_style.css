@@ -1,0 +1,63 @@
+body{
+	background: #00DDBB !important;
+}
+
+a{	
+	display: block;
+	width: 30%;
+	background: rgb(0,0,255);
+	color: rgb(245,245,244);
+	font-weight: bold;
+	font-size: 2.5vw;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1%;
+	/*text-decoration: none;*/
+	margin-top: 1%;
+}
+
+ul,ol{
+	display: block;
+	width: 30%;
+	font-weight: bolder;
+	margin: 0 auto;
+	font-size: 150%;
+	/*list-style-image: url("C:/My_content/Learnings/Front End/HTML5_CSS_JS/HTML/santa.svg");*/
+}
+
+
+li {
+	margin: 0;
+	font-size: 2vw;
+	padding: 4% 0 6% 12%;
+	list-style: none;
+	background-image: url("C:/My_content/Learnings/Front End/HTML5_CSS_JS/HTML/santa.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 10%;
+}
+
+
+a:visited{
+	background: yellow;
+	color: black;
+}
+
+a:hover{
+	background: grey;
+	color: blue;
+}
+
+
+a:focus{
+	background: grey;
+	color: blue;
+}
+
+a:active{
+	border: 3px solid black;
+}
+
+*{
+	border: 3px solid red; 
+}
