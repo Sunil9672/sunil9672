@@ -1,0 +1,45 @@
+
+/*
+html{
+	color: #7400ff3b;
+}*/
+
+body{
+	background-color: #7400ff3b;
+}
+
+h1{
+	color: #10ff00;
+	background-color: black;
+	font-family: Arial !important;
+	font-style: italic;
+	font-variant: small-caps;
+	font-size: 2em;
+	text-align: center;
+}
+
+h2{	
+	text-decoration: underline;
+	text-decoration-color: gray;
+	text-decoration-style: solid;
+	color: magenta;
+	font-size: 2em;
+}
+
+p{
+	margin-left: 1.5em;
+}
+
+a{
+	text-align: center;
+}
+
+iframe{
+	display: block;
+	border-style: none;
+	margin: 0 auto;
+}
+
+img{
+	visibility: hidden;
+}
