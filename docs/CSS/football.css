@@ -1,6 +1,6 @@
 body{
 	padding: 2%;
-	background-image: url("C:/My_content/Learnings/Front End/HTML5_CSS_JS/HTML/media/players1.png");
+	background-image: url("./media/players1.png");
 	background-position: top center;
 	background-size: 95%;
 }
