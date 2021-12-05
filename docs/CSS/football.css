@@ -1,5 +1,6 @@
 body{
-	padding: 2%;
+	padding: 1%;
+	margin: 1%;
 	background-image: url("https://www.fifpro.org/media/j5liv5kv/coverpic.png?center=0.28279421831185064,0.52158590308370045&mode=crop&heightratio=0.64&width=1600&rnd=132326672978430000");
 	background-position: top center;
 	background-size: 95%;
@@ -9,34 +10,41 @@ header{
 	display: block;
 	height: 10vw;
 	text-align: center;
-	/*background-image: url("C:/My_content/Learnings/Front End/HTML5_CSS_JS/HTML/media/players1.png");*/
-	/*margin-top: 0px;*/
 	margin: 0;
 	padding-top: 1vw;
-	/*background-position: top center;*/
-	/*background-size: %;*/
 }
 
-header h1{
-	color: red;
-	padding-top: 0vw;
-	margin: 0vw;
-	font-size: 3vw;
+.inner{
+	color: white;
+	/*padding: 0 1vw;*/
+	margin: auto auto;
+	font-size: 2vw;
+	width: 23%;
+	border-radius: 12em;
+	border-color: black;
+	border-style: solid;
+	border-width: 0em;
+	background: linear-gradient(rgba(200,200,200, 0.5) 0%, rgba(20,20,20, 0.5) 100%);
+	/*transition: color 0.5s linear 1s, background 1s linear 1s, border-width 0.5s linear 1s, transform 1s ease-out 1s;*/
+	cursor:pointer;	
 }
 
-header a{
+
+header nav>a{
 	display: inline-block;
 	color: black;
-	background: rgba(255,200,255,0.3);
-	width: 15%;
+	background: rgba(255,255,255,0.6);
+	width: 12%;
 	height: 2vw;
-	margin: 0 auto;
-	margin-right: 4vw;
-	margin-left: 4vw;
-	margin-top: 2vw;
+	margin:  5vh 3vw;
+	/*margin:3vw;*/
 	text-decoration: none;
 	font-size: 1.5vw;
 	font-weight: bolder;
+	transition-property: width, height, background;
+	transition-delay: 0.5s;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
 }
 
 div{
@@ -44,32 +52,37 @@ div{
 	display: inline-block;
 	float: left;
 	text-align: top;
-	background: rgba(255,255,255,0.7);
+	background: rgba(255,255,255,0.6);
 	width: 60%;
 	font-size: 1.5vw;
+	overflow: auto;
 }
 
-figure{
+main>figure{
 	background: darkgreen;
 	display: inline-block;
 	float: left;
 	width: 25%;
 }
 
-header a{
+header nav>a{
 	-webkit-border-radius: 5%;
 	-moz-border-radius: 5%;
 	-o-border-radius: 5%;
 	border-radius: 5%;
 }
 
-img{
+main>figure img{
 	text-align: center;
 	border: 0.2vw solid black;
 	margin: 4vw;
 	margin-bottom: 0;
 	width: 15vw;
 	height: 10vw;
+	transition-property: width, margin, height, margin-bottom;
+	transition-delay: 0.5s;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in; 
 }
 
 .inline{
@@ -80,12 +93,46 @@ img{
 	background: white !important;
 }
 
-nav a:visited{
-	background: orange;
+.absolute_rotate{
+	padding-top: 5vh;
+	text-align: center;
+	background: transparent;
+	display: block;
+	position: absolute;
+	top: -3vh;
+	left: 25vw;
+	width: 50%;
+	height: 15%;
+}
+
+.inner:hover{
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+	background: grey;
+	border-width: 0.1em;
+	color: black;
+}
+
+.outer:hover .inner{
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+	color: black;
+}
+
+main>figure img:hover {
+	width: 20vw;
+	height: 15vw;
+	margin: 2vw;
+	margin-bottom: 0vw;
+}
+
+nav>a:visited{
+	background: rgba(255,255,255,0.6);
 }
 	
-nav a:hover, nav a:focus{
-	background: rgb(200,200,200,0.8);
+nav>a:hover, nav>a:focus{
+	background: rgb(200,200,200,0.9);
+	width: 15%;
 }
 
 main a{
@@ -96,7 +143,39 @@ main a:visited{
 	color: purple;
 }
 	
-main a:hover, main a:focus{
+main a:hover, main a:focus{	
 	text-decoration: underline;
 }
 
+header ul{
+	box-sizing: border-box;
+	display: inline-block;
+	width: inherit;
+	position: absolute;
+	list-style: none;
+	width: 14%;
+	top: 22vh;
+	left: 67.5vw;
+	text-align: left;
+	visibility: hidden;
+}
+
+.scroll li{
+	display: block; 
+	box-sizing: border-box;
+	line-height: 30px;
+	padding-left: 7vh;
+	width: 100%;
+	background: black;
+	border-bottom: 1px solid white;
+	/*visibility: hidden;*/
+}
+
+li a{
+	color:white;
+	text-decoration: none;
+}
+
+.scroll:hover ul{
+	visibility: visible;
+}
