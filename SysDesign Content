@@ -1,1 +1,63 @@
 Database From Scratch: https://cstack.github.io/db_tutorial/
+
+A practical roadmap (6 months)
+Month 1
+
+Learn:
+
+Modern JavaScript
+ES6+
+Async/Await
+Promises
+DOM
+Month 2
+
+Learn:
+
+TypeScript
+Types
+Interfaces
+Generics
+
+As a Java developer, this will feel natural.
+
+Month 3
+
+Learn:
+
+React
+Hooks
+State management
+
+Build:
+
+Todo app
+Notes app
+Month 4
+
+Learn:
+
+Next.js
+
+Build:
+
+Personal website
+Blog
+Dashboard
+Month 5
+
+Learn:
+
+Node.js
+Express/NestJS
+
+Build:
+
+Full-stack app
+Month 6
+
+Learn:
+
+Electron
+
+Convert your React application into a desktop application.
